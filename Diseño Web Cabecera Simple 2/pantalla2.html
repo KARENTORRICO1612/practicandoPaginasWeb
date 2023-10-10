@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="style.css">
+
+      <title>Responsive dropdown menu - Bedimcode</title>
+   </head>
+   <body>
+      <!--=============== HEADER ===============-->
+      <div id="headerContainer"></div>
+      
+      <main class="header-content">
+        <h1>Contenido principal de la pantalla 2</h1>
+        <p>Este es el contenido principal de mi página.</p>
+    </main>
+
+    <script>
+        // Utiliza la función fetch para cargar el encabezado desde header.html
+        fetch('header.html')
+            .then(response => response.text()) // Convierte la respuesta en texto
+            .then(data => {
+                // Inserta el contenido del encabezado en el contenedor
+                document.getElementById('headerContainer').innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el encabezado:', error));
+    </script>
+      <!--=============== MAIN JS ===============-->
+      <script src="main.js"></script>
+   </body>
+</html>

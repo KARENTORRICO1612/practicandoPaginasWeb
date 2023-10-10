@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style2.css" media="screen" />
+</head>
+<body>
+    
+    <!-- Aquí se mostrará el encabezado -->
+    <div id="headerContainer"></div>
+    
+
+    <nav class="navegador">
+        <h2>Navegador</h2>
+        <ul>
+          <li><a href="#">Enlace 1</a></li>
+          <li><a href="#">Enlace 2</a></li>
+          <li><a href="#">Enlace 3</a></li>
+        </ul>
+      </nav>
+    
+      <main>
+        <div class="contenido">
+          <h2>Contenido Principal</h2>
+          <p>Este es el contenido del cuerpo de la página. Puedes agregar más elementos aquí.</p>
+            <img src="https://s1.eestatic.com/2020/06/23/curiosidades/naturaleza-planeta-tierra/ciencias_naturales-flores-naturaleza_y_planeta_tierra_499960581_154305912_1706x960.jpg">
+        </div>
+      </main>
+
+    <script>
+        // Utiliza la función fetch para cargar el encabezado desde header.html
+        fetch('header2.html')
+            .then(response => response.text()) // Convierte la respuesta en texto
+            .then(data => {
+                // Inserta el contenido del encabezado en el contenedor
+                document.getElementById('headerContainer').innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el encabezado:', error));
+    </script>
+
+
+    <h1>ESTE ES LA SECCION DE PRODUCTOS</h1>
+</body>
+</html>

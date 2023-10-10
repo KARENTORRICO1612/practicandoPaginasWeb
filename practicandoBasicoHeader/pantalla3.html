@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style2.css" media="screen" />
+  <title>Navegador y Contenido</title>
+  <style>
+    /* Estilos para el encabezado y la barra de navegación */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #555;
+      color: white;
+      padding: 10px;
+    }
+
+    /* Estilos para el cuerpo */
+    main {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+    }
+
+    /* Estilo para la columna de navegación */
+    .navegador {
+      flex-basis: 20%; /* Ancho de la columna del navegador */
+      background-color: #eee;
+      padding: 10px;
+    }
+
+    /* Estilo para la columna del contenido */
+    .contenido {
+      flex-grow: 1; /* La columna de contenido crecerá para ocupar el espacio restante */
+      padding-left: 20px; /* Agregar un espacio entre la columna del navegador y el contenido */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Este es el Encabezado</h1>
+  </header>
+
+  <nav class="navegador">
+    <h2>Navegador</h2>
+    <ul>
+      <li><a href="pantalla2.html">Pantalla2</a></li>
+      <li><a href="#">Enlace 2</a></li>
+      <li><a href="#">Enlace 3</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="contenido">
+      <h2>Contenido Principal</h2>
+      <p>Este es el contenido del cuerpo de la página. Puedes agregar más elementos aquí.</p>
+    </div>
+  </main>
+</body>
+</html>

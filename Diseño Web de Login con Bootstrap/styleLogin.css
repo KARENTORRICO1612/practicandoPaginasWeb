@@ -1,0 +1,18 @@
+
+
+body{
+    background: #59bfff;
+    background: linear-gradient(to right, #515aff, #59bdff);
+}
+
+.bg {
+    background-image: url(img/fondo2Votar.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    margin-bottom: 20px;
+    padding-inline-end: 15%;
+}
